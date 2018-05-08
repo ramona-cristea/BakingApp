@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baking.app.views.StepDetailFragment"
+    >
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/step_video_player"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_height"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/text_step_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step_video_player"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:background="@color/colorPrimaryLight"
+        android:layout_above="@id/navigation_bar"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:id="@+id/navigation_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp">
+
+        <Button
+            android:id="@+id/button_previous_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:drawableStart="@drawable/vector_previous"
+            android:textColor="@color/white"
+            android:text="@string/previous_step"
+            />
+
+        <Button
+            android:id="@+id/button_next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@drawable/vector_next"
+            android:textColor="@color/white"
+            android:text="@string/next_step"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+

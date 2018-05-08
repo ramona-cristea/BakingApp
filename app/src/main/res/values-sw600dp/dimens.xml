@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recipe_thumbnail_width">200dp</dimen>
+    <dimen name="grid_layout_margin">8dp</dimen>
+    <dimen name="video_height">420dp</dimen>
+</resources>
